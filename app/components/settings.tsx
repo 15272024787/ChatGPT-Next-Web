@@ -989,7 +989,7 @@ export function Settings() {
                           value={accessStore.openaiApiKey}
                           type="text"
                           placeholder={
-                            Locale.Settings.Access.OpenAI.ApiKey.Placeholder
+                            Locale.Settings.Access.OpenAI.ApiKey
                           }
                           onChange={(e) => {
                             accessStore.update(
@@ -1029,7 +1029,7 @@ export function Settings() {
                           value={accessStore.azureApiKey}
                           type="text"
                           placeholder={
-                            Locale.Settings.Access.Azure.ApiKey.Placeholder
+                            Locale.Settings.Access.Azure.ApiKey
                           }
                           onChange={(e) => {
                             accessStore.update(
@@ -1088,7 +1088,7 @@ export function Settings() {
                           value={accessStore.googleApiKey}
                           type="text"
                           placeholder={
-                            Locale.Settings.Access.Google.ApiKey.Placeholder
+                            Locale.Settings.Access.Google.ApiKey
                           }
                           onChange={(e) => {
                             accessStore.update(
