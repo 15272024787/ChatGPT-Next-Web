@@ -287,7 +287,7 @@ const cn = {
         ApiKey: {
           Title: "API Key",
           SubTitle: "使用自定义 OpenAI Key 绕过密码访问限制",
-          Placeholder: "",
+          
         },
 
         Endpoint: {
