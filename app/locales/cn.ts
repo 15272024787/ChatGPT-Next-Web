@@ -13,7 +13,6 @@ const cn = {
   Auth: {
     Title: "设备未授权",
     Tips: "验证后可使用本产品全部功能",
-    SubTips: "或者输入你的 OpenAI 或 Google API 密钥",
     Input: "sk-xxxxxxxxxxxx",
     Confirm: "确认",
     Later: "稍后再说",
