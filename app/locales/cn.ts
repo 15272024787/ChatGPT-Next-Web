@@ -273,7 +273,7 @@ const cn = {
       AccessCode: {
         Title: "访问密码",
         SubTitle: "管理员已开启加密访问",
-        Placeholder: "请输入访问密码",
+        
       },
       CustomEndpoint: {
         Title: "自定义接口",
@@ -299,7 +299,7 @@ const cn = {
         ApiKey: {
           Title: "接口密钥",
           SubTitle: "使用自定义 Azure Key 绕过密码访问限制",
-          Placeholder: "Azure API Key",
+         
         },
 
         Endpoint: {
@@ -316,7 +316,7 @@ const cn = {
         ApiKey: {
           Title: "接口密钥",
           SubTitle: "使用自定义 Google AI Studio API Key 绕过密码访问限制",
-          Placeholder: "",
+         
         },
 
         Endpoint: {
