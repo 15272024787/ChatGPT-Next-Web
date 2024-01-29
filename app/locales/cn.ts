@@ -13,6 +13,7 @@ const cn = {
  Auth: {
     Title: "设备未授权",
     Tips: "使用前请先设备验证，请在下方填入授权码",
+    SubTips: "",
     Input: "在此处填写授权码",
     Confirm: "开始授权",
     Later: "退出授权",
