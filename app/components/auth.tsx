@@ -56,7 +56,7 @@ export function AuthPage() {
           <input
             className={styles["auth-input"]}
             type="password"
-            placeholder={Locale.Settings.Access.OpenAI.ApiKey}
+            placeholder={Locale.Settings.Access.OpenAI.ApiKey.Placeholder}
             value={accessStore.openaiApiKey}
             onChange={(e) => {
               accessStore.update(
@@ -67,7 +67,7 @@ export function AuthPage() {
           <input
             className={styles["auth-input"]}
             type="password"
-            placeholder={Locale.Settings.Access.Google.ApiKey}
+            placeholder={Locale.Settings.Access.Google.ApiKey.Placeholder}
             value={accessStore.googleApiKey}
             onChange={(e) => {
               accessStore.update(
