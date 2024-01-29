@@ -10,13 +10,13 @@ const cn = {
       ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
       : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
   },
- Auth: {
-    Title: "设备未授权",
-    Tips: "使用前请先设备验证，请在下方填入授权码",
-    SubTips: "",
-    Input: "在此处填写授权码",
-    Confirm: "开始授权",
-    Later: "退出授权",
+  Auth: {
+    Title: "需要密码",
+    Tips: "管理员开启了密码验证，请在下方填入访问码",
+    SubTips: "或者输入你的 OpenAI 或 Google API 密钥",
+    Input: "在此处填写访问码",
+    Confirm: "确认",
+    Later: "稍后再说",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -269,7 +269,71 @@ const cn = {
       NoAccess: "输入 API Key 或访问密码查看余额",
     },
 
-  
+    Access: {
+      AccessCode: {
+        Title: "访问密码",
+        SubTitle: "管理员已开启加密访问",
+        Placeholder: "请输入访问密码",
+      },
+      CustomEndpoint: {
+        Title: "自定义接口",
+        SubTitle: "是否使用自定义 Azure 或 OpenAI 服务",
+      },
+      Provider: {
+        Title: "模型服务商",
+        SubTitle: "切换不同的服务商",
+      },
+      OpenAI: {
+        ApiKey: {
+          Title: "API Key",
+          SubTitle: "使用自定义 OpenAI Key 绕过密码访问限制",
+          Placeholder: "OpenAI API Key",
+        },
+
+        Endpoint: {
+          Title: "接口地址",
+          SubTitle: "除默认地址外，必须包含 http(s)://",
+        },
+      },
+      Azure: {
+        ApiKey: {
+          Title: "接口密钥",
+          SubTitle: "使用自定义 Azure Key 绕过密码访问限制",
+          Placeholder: "Azure API Key",
+        },
+
+        Endpoint: {
+          Title: "接口地址",
+          SubTitle: "样例：",
+        },
+
+        ApiVerion: {
+          Title: "接口版本 (azure api version)",
+          SubTitle: "选择指定的部分版本",
+        },
+      },
+      Google: {
+        ApiKey: {
+          Title: "接口密钥",
+          SubTitle: "使用自定义 Google AI Studio API Key 绕过密码访问限制",
+          Placeholder: "Google AI Studio API Key",
+        },
+
+        Endpoint: {
+          Title: "接口地址",
+          SubTitle: "不包含请求路径，样例：",
+        },
+
+        ApiVerion: {
+          Title: "接口版本 (gemini-pro api version)",
+          SubTitle: "选择指定的部分版本",
+        },
+      },
+      CustomModel: {
+        Title: "自定义模型名",
+        SubTitle: "增加自定义模型可选项，使用英文逗号隔开",
+      },
+    },
 
     Model: "模型 (model)",
     Temperature: {

@@ -633,9 +633,6 @@ export function Settings() {
 
   useEffect(() => {
     const keydownEvent = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        navigate(Path.Home);
-      }
     };
     if (clientConfig?.isApp) {
       // Force to set custom endpoint to true if it's app
@@ -896,7 +893,25 @@ export function Settings() {
           </ListItem>
         </List>
 
-       
+        <List id={SlotID.CustomModel}>
+          {showAccessCode && (
+            <ListItem
+              title={Locale.Settings.Access.AccessCode.Title}
+              subTitle={Locale.Settings.Access.AccessCode.SubTitle}
+            >
+              <PasswordInput
+                value={accessStore.accessCode}
+                type="text"
+                placeholder={Locale.Settings.Access.AccessCode.Placeholder}
+                onChange={(e) => {
+                  accessStore.update(
+                    (access) => (access.accessCode = e.currentTarget.value),
+                  );
+                }}
+              />
+            </ListItem>
+          )}
+
           {!accessStore.hideUserApiKey && (
             <>
               {
